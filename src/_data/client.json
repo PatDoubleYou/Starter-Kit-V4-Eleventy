@@ -7,7 +7,8 @@
     "lineOne": "Address",
     "lineTwo": "Second Address Line, If Needed",
     "city": "St. George",
-    "county": "Utah",
+    "county": "Washington County",
+    "state": "Utah",
     "postcode": "84770",
     "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
   },
