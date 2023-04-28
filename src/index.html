@@ -1,329 +1,213 @@
 ---
 layout: 'base.html'
-description: 'Meta description for the page'
-metaTitle: 'Title that shows up on google searches'
-tagTitle: 'Pixel Perfect Websites'
+description: 'Haggerty Construction, a family-owned general contractor in St. George, Utah, specializes in high-quality
+home repairs, kitchen and bathroom remodels, custom cabinetry, and appliance installation. Experience our unmatched
+craftsmanship and customer service throughout Washington County.'
+metaTitle: 'Haggerty Construction General Contractors'
+tagTitle: 'Next-generation Contractors'
 preloadImg: '/images/landing-1920w.webp'
 preloadCSS: '/css/local.css'
 permalink: '/'
 eleventyNavigation:
-  key: Home
-  order: 100
+key: Home
+order: 100
 ---
-<!-- Enter html code below -->
-
-<!-- ============================================ -->
-<!--                    Hero                      -->
-<!-- ============================================ -->
-
-<section id="hero">
-  <div class="cs-container">
-    <div class="cs-flex-group">
-      <span class="cs-topper">mountain hiking society</span>
-      <h1 class="cs-title">Explore the World with Exciting People</h1>
-      <p class="cs-text">
-        Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh
-        condimentum.
-      </p>
-      <a href="" class="cs-button-solid">Explore More</a>
-      <a href="" class="cs-button-transparent">
-        <img
-          class="cs-img"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-          alt="play icon"
-          width="17"
-          height="17"
-/>
-        Learn More
-      </a>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                {% image './src/assets/images/FullName500pxDarkBlue.png', 'The logo for Haggerty Construction.', 'img-fluid', 'eager', '(max-width: 500px) 200px, 400px'%}
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <h1 class="hero-title">Transform Your Space: Expert General Contractors in St. George, Utah</h1>
+                <h2 class="hero-subtitle">Quality Craftsmanship and Unmatched Customer Service</h2>
+                <p class="hero-description">Haggerty Construction specializes in custom cabinets, kitchen and
+                    bathroom remodels, and a wide range of general contracting services. Discover the difference
+                    that 40 years of experience can make.</p>
+                <a href="#contact" class="btn btn-primary hero-cta">Request an Estimate</a>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <!-- Background Image -->
-  {% image './src/images/landing.jpg', 'mountains', 'cs-picture', 'eager', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>
 
-<!-- ============================================ -->
-<!--                  Services                    -->
-<!-- ============================================ -->
-
-<section id="services" class="services">
-  <!-- Get Icons From flaticon.com -->
-  <div class="card">
-    <picture>
-      <img
-        aria-hidden="true"
-        decoding="async"
-        src="/assets/svgs/service1.svg"
-        alt="appliance"
-        width="48"
-        height="48"
-/>
-    </picture>
-    <h2>Service 1</h2>
-    <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-  </div>
-  <div class="card">
-    <picture>
-      <img
-        aria-hidden="true"
-        decoding="async"
-        src="/assets/svgs/service2.svg"
-        alt="appliance"
-        width="48"
-        height="48"
-/>
-    </picture>
-    <h2>Service 2</h2>
-    <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-  </div>
-  <div class="card">
-    <picture>
-      <img
-        aria-hidden="true"
-        decoding="async"
-        src="/assets/svgs/service3.svg"
-        alt="appliance"
-        width="48"
-        height="48"
-/>
-    </picture>
-    <h2>Service 3</h2>
-    <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!--                 Side By Side                 -->
-<!-- ============================================ -->
-
-<section id="sbs">
-  <div class="cs-container">
-    <!-- Left Image Section -->
-    <div class="cs-left">
-      {% image './src/images/cabinets2.jpg', 'house', 'cs-picture cs-picture1', 'lazy'%}
-      {% image './src/images/construction.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
+<div class="container px-3 mt-3" id="services">
+    <div class="row text-center">
+        <div class="col">
+            <h2 class="py-2">Our Services</h3>
+        </div>
     </div>
-    <!-- Right Content Section-->
-    <div class="cs-right">
-      <span class="cs-topper">About Us</span>
-      <h2 class="cs-title">About Company Title</h2>
-      <p class="cs-text">
-        In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis
-        libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei
-        aptent taciti sociosqu ad litora torquent per.
-      </p>
-      <p class="cs-text">
-        In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis
-        libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei
-        aptent taciti sociosqu ad litora torquent per.
-      </p>
-      <div class="cs-flex-group">
-        <p class="cs-flex-p">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet
-          imperdiet for mind.
-        </p>
-        <span class="cs-name">Justin Time</span>
-        <span class="cs-job">CEO-Founder</span>
-        <img
-          class="cs-quote-icon"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-          alt="gavel"
-          width="136"
-          height="77"
-/>
-      </div>
-      <a href="/about" class="button-solid">More About Us</a>
+    <div class="row">
+
+        <div class="col-lg mt-3 mt-lg-0">
+            <div class="card service h-100">
+                {% image './src/images/pro-range-kitchen.jpg', 'A custom bench being made by the Haggerty Team.',
+                'card-img-top img-fluid', 'lazy' %}
+                <div class="card-body">
+                    <h4 class="card-title">Expert Kitchen & Bath Remodels</h4>
+                    <p class="card-text">
+                        Ready to elevate your kitchen or bathroom? Haggerty Construction specializes in professional
+                        kitchen and bath remodels, whether it's a small update or a complete transformation. Our
+                        experienced team will manage your project from start to finish, ensuring exceptional results
+                        and a stress-free experience. Trust us to bring your vision to life with style and
+                        precision.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg mt-3 mt-lg-0">
+            <div class="card service h-100">
+                <img class="card-img-top img-fluid" src="/assets/images/conners-living-room.webp" width="411" height="274"
+                    alt="A beautiful kitchen filled with gorgeous cabinets.">
+                <div class="card-body">
+                    <h4 class="card-title">Custom Cabinets & Storage Solutions</h4>
+                    <p class="card-text">Enhance your home with our expertly designed and crafted custom cabinets.
+                        From kitchens to laundry rooms, and stylish floating shelves in between, Haggerty
+                        Construction has you covered. We'll work with you to create personalized storage solutions
+                        that optimize your space and add a touch of elegance to every room.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg mt-3 mt-lg-0">
+            <div class="card service h-100">
+                <img class="card-img-top img-fluid" src="images/shjon-with-a-level-on-a-shelf.webp" width="411"
+                    height="274" alt="An open stainless steel dishwasher.">
+                <div class="card-body">
+                    <h4 class="card-title">Comprehensive General Contracting Services</h4>
+                    <p class="card-text">Haggerty Construction delivers top-notch general contracting services for
+                        all your construction and renovation needs. Our skilled team manages projects of any size,
+                        ensuring timely completion and exceptional quality. From residential to commercial, we
+                        provide seamless solutions and unparalleled customer service to make your vision a reality.
+                        Trust Haggerty Construction for a hassle-free experience and outstanding results.</p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
 
-<!-- ============================================ -->
-<!--            Extra Content To Rank             -->
-<!-- ============================================ -->
-
-<section id="sbs-r">
-  <div class="cs-container">
-    <!-- Left Image Section -->
-    <div class="cs-left">
-      {% image './src/images/construction.jpg', 'house', 'cs-picture cs-picture1', 'lazy'%}
-      {% image './src/images/cabinets2.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
+    <div class="col-sm mt-5 mt-xl-3 mt-xxl-5">
+        <div class="d-grid gap-2">
+            <a href="/gallery" class="btn btn-primary btn-lg">VIEW OUR GALLERY</a>
+        </div>
     </div>
-    <!-- Right Content Section-->
-    <div class="cs-right">
-      <span class="cs-topper">SEO Ranking</span>
-      <h2 class="cs-title">Talk about a main service keyword</h2>
-      <p class="cs-text">
-        In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis
-        libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei
-        aptent taciti sociosqu ad litora torquent per.
-      </p>
-      <p class="cs-text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque commodi id
-        voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores ullam.
-        Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error minus quia
-        eligendi sapiente eos.
-      </p>
-      <a href="" class="button-solid">Learn More About Thing</a>
+
+    <div class="row my-5">
+
+        <!-- Expert Kitchen Remodels Section -->
+        <section class="kitchen-remodels-section" id="home-repairs-section">
+            <div class="container">
+                <h2 class="section-title">Expert Kitchen Remodels & Cabinet Renovations</h2>
+                <p class="section-description">At Haggerty Construction, we specialize in transforming kitchens into
+                    beautiful, functional spaces that suit your lifestyle. Our skilled team offers a wide range of
+                    kitchen remodeling and cabinet renovation services, ensuring you receive the highest quality
+                    workmanship for your St. George, Utah home. Experience the difference our expertise can make in
+                    creating your dream kitchen.</p>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="remodel-title">Kitchen Design & Layout</h3>
+                        <p class="remodel-description">Our experienced designers will help you plan the perfect
+                            kitchen layout, optimizing space and functionality to suit your needs.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="remodel-title">Cabinet Renovations</h3>
+                        <p class="remodel-description">From refacing to custom installations, our skilled team can
+                            transform your kitchen cabinets for a stunning new look.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="remodel-title">Full Kitchen Remodels</h3>
+                        <p class="remodel-description">Discover the potential of your kitchen with our comprehensive
+                            remodeling services, tailored to create a space you'll love.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
-  </div>
-</section>
 
-<!-- ============================================ -->
-<!--                   Gallery                    -->
-<!-- ============================================ -->
+    <!-- About Us Section -->
+    <section class="about-us-section" id="about-us-section">
+        <div class="container my-5 p-4">
+            <h2 class="section-title">About Haggerty Construction</h2>
+            <p class="section-description">Haggerty Construction is a family-owned and operated general contracting
+                company, proudly serving St. George, Utah, and the surrounding areas. Founded by William Haggerty, a
+                seasoned construction professional with decades of experience, our team consists of all three of his
+                sons, Jayden,
+                Blake, and Shjon. As St. George natives, we are deeply committed to the
+                community and strive to establish a strong reputation for quality, integrity, and customer
+                satisfaction.</p>
 
-<section id="gallery">
-  <div class="cs-container">
-    <span class="cs-topper">Our Portfolio</span>
-    <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-    <div class="cs-image-group">
-      <!-- Row 1-->
-      <div class="cs-row cs-row-1">
-        {% image './src/images/portfolio/port1.jpg', 'new hallway', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port4.jpg', 'new home construction', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port7.jpg', 'building a new wall', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-      <!-- Row 2 -->
-      <div class="cs-row cs-row-2">
-        {% image './src/images/portfolio/port2.jpg', 'new kitchen', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port5.jpg', 'apartment addition', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port8.jpg', 'kew kitchen cabinets', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-      <!-- Row 3 -->
-      <div class="cs-row cs-row-3">
-        {% image './src/images/portfolio/port3.jpg', 'new kitchen', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port6.jpg', 'apartment addition', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/portfolio/port9.jpg', 'kew kitchen cabinets', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Expert Craftsmanship</h3>
+                    <p>Our skilled team of professionals brings a wealth of experience and dedication to every
+                        project we undertake. We take pride in our work, ensuring that our craftsmanship meets the
+                        highest standards of quality and exceeds your expectations.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Community Driven</h3>
+                    <p>As we continue to grow, our focus remains on providing excellent service to the St. George
+                        community. We value our relationships with local homeowners and businesses, and we're
+                        dedicated to helping you create the perfect space that meets your needs and budget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
+    <hr class="my-5">
+
+    <!-- Contact Us Form -->
+
+    <div class="row justify-content-center text-center" id="contact">
+        <div class="col">
+            <h2>Tell Us About Your Project</h2>
+        </div>
     </div>
-    <a href="/projects" class="button-solid">View Full Gallery</a>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!--                   Reviews                    -->
-<!-- ============================================ -->
-
-<section id="reviews">
-  <div class="cs-container">
-    <span class="cs-topper">Our Reviews</span>
-    <h2 class="cs-title">Words From Our Customers</h2>
-    <p class="cs-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis
-      sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum
-      dolor sit amet.
-    </p>
-    <ul class="cs-card-group">
-      <!-- Review 1 -->
-      <li class="cs-item">
-        <img
-          class="cs-item-img"
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-          alt="profile picture"
-          width="80"
-          height="80"
-/>
-        <p class="cs-item-p">
-          Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna
-          pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa
-          urna, volutpat orci imperdiet eget eget.
-        </p>
-        <span class="cs-reviewer">
-          Jon Doe
-          <span class="cs-desc">Homeowner</span>
-        </span>
-        <img
-          class="cs-item-stars"
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-          alt="stars"
-          width="96"
-          height="16"
-/>
-      </li>
-      <!-- Review 2 -->
-      <li class="cs-item">
-        <img
-          class="cs-item-img"
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-          alt="profile picture"
-          width="80"
-          height="80"
-/>
-        <p class="cs-item-p">
-          Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna
-          pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa
-          urna, volutpat orci imperdiet eget eget.
-        </p>
-        <span class="cs-reviewer">
-          Jane Doe
-          <span class="cs-desc">Homeowner</span>
-        </span>
-        <img
-          class="cs-item-stars"
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-          alt="stars"
-          width="96"
-          height="16"
-/>
-      </li>
-    </ul>
-    <a aria-label="read more reviews" href="/reviews" class="button-solid">Read More</a>
-  </div>
-</section>
-<!-- ============================================ -->
-<!--             Final Call to Action             -->
-<!-- ============================================ -->
-
-<section id="cta">
-  <div class="container">
-    <h2 class="title">
-      Get It Done <br/>
-      With Us Today
-    </h2>
-    <p>
-      Say something catchy, informative, and encouraging to click the button to go to the contact page. I like to add
-      these to the bottom of all pages.
-    </p>
-    <a href="/contact" class="button-solid">Get an Estimate Now</a>
-  </div>
-  {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
-</section>
-
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window
-      .netlifyIdentity
-      .on('init', (user) => {
-        if (!user) {
-          window
-            .netlifyIdentity
-            .on('login', () => {
-              document.location.href = '/admin/';
-            });
-        }
-      });
-  }
-</script>
+    <div class="row justify-content-center">
+        <div class="col col-xl-8">
+            <form name="request-quote" data-netlify=true method="POST" enctype="application/x-www-form-urlencoded">
+                <div class="mb-3">
+                    <label for="customer_name" class="form-label">Name *</label>
+                    <input type="text" class="form-control" id="customer_name" name="customer_name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="customer_phone" class="form-label">Phone *</label>
+                    <input type="tel" class="form-control" id="customer_phone" name="customer_phone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="customer_email" class="form-label">Email *</label>
+                    <input type="email" class="form-control" id="customer_email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="service_type" class="form-label">Service Type *</label>
+                    <select class="form-control" id="service_type" name="service_type" required>
+                        <option value="" selected disabled>Select a service</option>
+                        <option value="Custom Cabinets">Custom Cabinets</option>
+                        <option value="Kitchen Remodel">Kitchen Remodel</option>
+                        <option value="Bathroom Remodel">Bathroom Remodel</option>
+                        <option value="General Contracting">General Contracting</option>
+                        <option value="Handyman Services">Handyman Services</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="customer_message" class="form-label">Project Description *</label>
+                    <textarea class="form-control" id="customer_message" rows="5" name="message"
+                        placeholder="Tell us more about your project..." required></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="textable" name="textable">
+                    <label class="form-check-label" for="textable">Contact me by text message.</label>
+                </div>
+                <p class="form-required">* Required fields</p>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary btn-lg mb-5">Request an Estimate</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

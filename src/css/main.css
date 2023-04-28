@@ -1,0 +1,287 @@
+/*html {
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    overflow: auto;
+}*/
+
+body {
+    
+    background-image: url("images/concrete.webp");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: normal;
+    
+    background-color: #555;
+    --background-primary: #222;
+    color: #EEEEEE;
+
+    /*
+    font-family: sans-serif;
+    font-family: apotek, sans-serif;
+    font-weight: 200;
+    
+
+    font-family: "apotek-comp", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    */
+
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: 1.2rem;
+
+    margin: 0;
+    opacity: 5;
+    line-height: 1.2em;
+
+    /*
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    */
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #f5f5f5; /* Change to your preferred background color */
+    background-image: url('/assets/images/wood-texture.jpg');
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(233 229 218 / 84%);
+    z-index: 0;
+    box-shadow: 0px 10px 5px 5px #111;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.nav-link {
+    font-family: apotek-extrawide, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+a {
+    color: #51ACD6;
+}
+
+.btn {
+    display: inline-block;
+    /*background-color: #1a73e8; /* Change to your preferred button color */
+    color: #efefef;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+
+    transition: background-color 0.3s;
+
+    font-size: 1.8rem;
+    font-family: apotek-extrawide, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    box-shadow: 0px 5px 10px 0px #111111e3;
+}
+
+.btn-primary {
+    background-color: #346F8A; /* Change to your preferred primary button color */
+}
+
+.btn-primary:hover {
+    background-color: #3B4E57; /* Change to your preferred primary button hover color */
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: apotek-extrawide, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.kitchen-remodels-section {
+    padding: 60px 0;
+}
+
+.about-us-section {
+    background-color: #17313D;
+    border-radius: 2px;
+    padding: 60px 30px;
+}
+
+.extra-light-font {
+    font-family: "apotek-comp", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#homepagepicture {
+    width: auto;
+    object-fit: cover;
+    animation-duration: 1s;
+    animation-name: slidefromleft;
+    position: relative;
+    top: 15px;
+}
+
+#commands-table, #commands-intro {
+    align-content: center;
+    animation-duration: 1s;
+    animation-name: slidefromleft;
+}
+
+#socials-buttons {
+    align-content: center;
+    align-items: center;
+}
+
+@media (min-width: 990px) {
+    #commands-table, #commands-intro, #socials-buttons {
+        max-width: 70%;
+    }
+}
+
+@keyframes slidefromleft {
+    from {
+        opacity: 0;
+        margin-right: 10%;
+    }
+    to {
+        opacity: 1;
+        margin-right: 0%;
+    }
+}
+
+.title {
+    font-family: apotek-extrawide, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    line-height: 3em;
+    margin: 0;
+
+    animation-duration: 1.25s;
+    animation-name: fade;
+}
+
+.jumbo {
+    background-color: var(--background-primary);
+    vertical-align: middle;
+}
+
+
+
+.gallery-section .card {
+    margin-bottom: 1.5rem;
+}
+
+.gallery-section .img-fluid {
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gallery-section .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.service {
+    background-color: #17313D;
+    box-shadow: 0px 7px 14px 0px #111111e3;
+}
+
+.d-grid a {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-duration: 1.25s;
+    animation-name: fade;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--background-primary);
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        margin-right: 5%
+    }
+    to {
+        opacity: 1;
+        margin-right: 0%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 38px;
+    }
+    .nav-link {
+        padding-top: 3rem;
+        font-size: 1.7rem;
+        padding-bottom: 1rem;
+    }
+    h1 {
+        border-radius: 10px;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .about-us-section {
+        background-color: #17313D;
+        border-radius: 2px;
+        padding: 30px 0px;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        line-height: 1.75rem;
+    }
+
+}
