@@ -5,7 +5,7 @@
 
 <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <span class="navbar-brand" href="#"><img class="img-fluid" src="images/logo white.png" width="40"
+        <span class="navbar-brand" href="#"><img class="img-fluid" src="/assets/images/logo white.png" width="40"
                 height="36" style="border-radius: 15px;" alt="Haggerty Construction's 'H' logo."></span>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,10 +13,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                <a class="nav-link {{ 'active' if '' == page.url }}" aria-current="page" href="/">HOME</a>
                 <a class="nav-link" href="#services">SERVICES</a>
                 <a class="nav-link" href="#about-us-section">ABOUT US</a>
-                <a class="nav-link" href="/pages/gallery">GALLERY</a>
+                <a class="nav-link {{ 'active' if 'gallery' == page.url }}" href="/gallery">GALLERY</a>
                 <a class="nav-link" href="tel:+14354141974"><i class="bi bi-telephone-fill"></i> (435) 414-1974</a>
             </div>
         </div>

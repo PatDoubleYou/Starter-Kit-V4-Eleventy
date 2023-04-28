@@ -9,7 +9,7 @@
 
 body {
     
-    background-image: url("images/concrete.webp");
+    background-image: url("/assets/images/concrete.webp");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
