@@ -16,7 +16,7 @@ date: 2023-05-02T16:31:55.908Z
 tags:
   - post
 image: /images/blog/home-energy-efficiency.jpg
-imageAlt: Home energy efficiency inforgraphic.
+imageAlt: Home energy efficiency infographic.
 ---
 Improving the energy efficiency of your home not only saves you money on utility bills but also adds value to your property. In this article, we will discuss some cost-effective DIY projects that can help reduce energy consumption and increase the overall appeal of your home. These upgrades are suitable for homeowners with varying levels of DIY skills, and they offer long-term benefits that make them worth the investment.
 
