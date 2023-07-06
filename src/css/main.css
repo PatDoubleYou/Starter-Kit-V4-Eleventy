@@ -209,7 +209,13 @@ h1, h2, h3, h4, h5 {
     vertical-align: middle;
 }
 
-
+.gallery-row {
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    background-color: #17313D;
+    border-radius: 5px;
+}
 
 .gallery-section .card {
     margin-bottom: 1.5rem;
@@ -282,6 +288,16 @@ footer {
 @media (max-width: 900px) {
     body {
         line-height: 1.75rem;
+    }
+
+    .gallery-row {
+        padding: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .kitchen-remodels-section {
+        padding: 10px 0px;
     }
 
 }

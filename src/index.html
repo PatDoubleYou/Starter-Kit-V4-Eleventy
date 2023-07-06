@@ -19,7 +19,9 @@ order: 100
     <div class="container">
         <div class="row">
             <div class="col-12" style="padding: 0px">
-                {% image './src/assets/images/FullName500pxDarkBlue.png', 'The logo for Haggerty Construction.', 'img-fluid', 'eager', '(max-width: 500px) 200px, 400px'%}
+                <!--{% image './src/assets/images/FullName500pxDarkBlue.png', 'The type logo for Haggerty Construction.',
+                'img-fluid', 'eager', '(max-width: 500px) 200px, 400px' %}-->
+                <img src="/assets/images/FullName500pxDarkBlue.png" class="img-fluid">
             </div>
         </div>
         <div class="row align-items-center">
@@ -46,8 +48,8 @@ order: 100
         <div class="col-lg mt-3 mt-lg-0">
             <div class="card service h-100">
                 <div class="card-img-top img-fluid">
-                    <img class="card-img-top img-fluid" src="/assets/images/pro-range-kitchen.jpg" width="411" height="274"
-                    alt="A beautiful kitchen filled with gorgeous cabinets.">
+                    <img class="card-img-top img-fluid" src="/assets/images/pro-range-kitchen.jpg" width="411"
+                        height="274" alt="A beautiful kitchen filled with gorgeous cabinets.">
                 </div>
                 <div class="card-body">
                     <h4 class="card-title">Expert Kitchen & Bath Remodels</h4>
@@ -64,8 +66,8 @@ order: 100
 
         <div class="col-lg mt-3 mt-lg-0">
             <div class="card service h-100">
-                <img class="card-img-top img-fluid" src="/assets/images/conners-living-room.webp" width="411" height="274"
-                    alt="A beautiful kitchen filled with gorgeous cabinets.">
+                <img class="card-img-top img-fluid" src="/assets/images/conners-living-room.webp" width="411"
+                    height="274" alt="A beautiful kitchen filled with gorgeous cabinets.">
                 <div class="card-body">
                     <h4 class="card-title">Custom Cabinets & Storage Solutions</h4>
                     <p class="card-text">Enhance your home with our expertly designed and crafted custom cabinets.
@@ -91,14 +93,21 @@ order: 100
             </div>
         </div>
     </div>
+</div>
 
-    <div class="col-sm mt-5 mt-xl-3 mt-xxl-5">
-        <div class="d-grid gap-2">
-            <a href="/gallery" class="btn btn-primary btn-lg">VIEW OUR GALLERY</a>
+<div class="container my-5">
+    <div class="row gallery-row">
+        <div class="col-sm col-md-8">
+            <h2>Want to see our past projects?</h2>
+        </div>
+        <div class="col-sm col-md-4">
+            <div class="d-flex align-items-center">
+                <a href="/gallery" class="btn btn-primary btn-lg">VIEW OUR GALLERY</a>
+            </div>
         </div>
     </div>
 
-    <div class="row my-5">
+    <div class="row mx-0 p-3 my-5 border border-4">
 
         <!-- Expert Kitchen Remodels Section -->
         <section class="kitchen-remodels-section" id="home-repairs-section">
@@ -127,10 +136,24 @@ order: 100
                             remodeling services, tailored to create a space you'll love.</p>
                     </div>
                 </div>
+                <div class="row pt-2">
+                    <div class="col-md-6">
+                        <img class="card-img-top img-fluid" src="/assets/images/trash can pullout.jpg" width="2048"
+                            height="1152" alt="An open stainless steel dishwasher.">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="card-img-top img-fluid" src="/assets/images/custom-drawer-front.jpg" width="2048"
+                            height="1152" alt="An open stainless steel dishwasher.">
+                    </div>
+                </div>
             </div>
         </section>
 
     </div>
+
+    <section class="cabinet-renovation-picture">
+
+    </section>
 
     <!-- About Us Section -->
     <section class="about-us-section" id="about-us-section">
