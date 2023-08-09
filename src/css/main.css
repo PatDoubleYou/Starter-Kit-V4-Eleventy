@@ -90,7 +90,7 @@ body {
     box-shadow: 0px 10px 5px 5px #111;
 }
 
-.container {
+.position-on-top {
     position: relative;
     z-index: 1;
 }
@@ -223,8 +223,7 @@ h1, h2, h3, h4, h5 {
 
 .gallery-section .img-fluid {
     /*margin-bottom: 1.5rem;*/
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
 }
 
 .gallery-section .section-title {
@@ -237,7 +236,7 @@ h1, h2, h3, h4, h5 {
 
 .service {
     background-color: #17313D;
-    box-shadow: 0px 7px 14px 0px #111111e3;
+    /*box-shadow: 0px 7px 14px 0px #111111e3;*/
 }
 
 .d-grid a {

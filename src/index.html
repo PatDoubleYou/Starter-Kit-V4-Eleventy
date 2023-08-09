@@ -1,7 +1,7 @@
 ---
 layout: 'base.html'
 description: 'Haggerty Construction, a family-owned general contractor in St. George, Utah, specializes in high-quality
-home repairs, kitchen and bathroom remodels, custom cabinetry, and appliance installation. Experience our unmatched
+home repairs, kitchen remodels, custom cabinetry, and appliance installation. Experience our unmatched
 craftsmanship and customer service throughout Washington County.'
 metaTitle: 'Haggerty Construction General Contractors'
 tagTitle: 'Next-generation Contractors'
@@ -16,7 +16,7 @@ order: 100
 <!-- Hero Section -->
 <section class="hero-section">
     <div class="overlay"></div>
-    <div class="container">
+    <div class="container-fluid position-on-top">
         <div class="row">
             <div class="col-12" style="padding: 0px">
                 <!--{% image './src/assets/images/FullName500pxDarkBlue.png', 'The type logo for Haggerty Construction.',
@@ -28,9 +28,8 @@ order: 100
             <div class="col-md-12">
                 <h1 class="hero-title">Transform Your Space: Expert General Contractors in St. George, Utah</h1>
                 <h2 class="hero-subtitle">Quality Craftsmanship and Unmatched Customer Service</h2>
-                <p class="hero-description">Haggerty Construction specializes in custom cabinets, kitchen and
-                    bathroom remodels, and a wide range of general contracting services. Discover the difference
-                    that 40 years of experience can make.</p>
+                <p class="hero-description">Haggerty Construction specializes in custom cabinets, kitchen remodels, and a wide range of general contracting services. Discover the difference
+                    that 30 years of experience can make.</p>
                 <a href="#contact" class="btn btn-primary hero-cta">Request an Estimate</a>
             </div>
         </div>
@@ -40,7 +39,7 @@ order: 100
 <div class="container px-3 mt-3" id="services">
     <div class="row text-center">
         <div class="col">
-            <h2 class="py-2">Our Services</h3>
+            <h2 class="pt-5">Our Services</h3>
         </div>
     </div>
     <div class="row">
@@ -52,10 +51,10 @@ order: 100
                         height="274" alt="A beautiful kitchen filled with gorgeous cabinets.">
                 </div>
                 <div class="card-body">
-                    <h4 class="card-title">Expert Kitchen & Bath Remodels</h4>
+                    <h4 class="card-title">Expert Kitchen Remodels</h4>
                     <p class="card-text">
-                        Ready to elevate your kitchen or bathroom? Haggerty Construction specializes in professional
-                        kitchen and bath remodels, whether it's a small update or a complete transformation. Our
+                        Ready to elevate your kitchen? Haggerty Construction specializes in professional
+                        kitchen remodels, whether it's a small update or a complete transformation. Our
                         experienced team will manage your project from start to finish, ensuring exceptional results
                         and a stress-free experience. Trust us to bring your vision to life with style and
                         precision.
@@ -96,22 +95,26 @@ order: 100
 </div>
 
 <div class="container my-5">
-    <div class="row gallery-row">
-        <div class="col-sm col-md-8">
-            <h2>Want to see our past projects?</h2>
+    <div class="row gallery-row text-center">
+        <div class="col-12 col-sm col-lg-6">
+            <img src="/assets/images/gallery/latest-remodel/after.jpg" class="img-fluid">
         </div>
-        <div class="col-sm col-md-4">
-            <div class="d-flex align-items-center">
+        <div class="col-12 col-sm col-lg-6 pt-5 pb-4">
+            <h2>Want to see our most recent project?</h2>
+            <div class="d-flex align-items-center justify-content-center">
                 <a href="/gallery" class="btn btn-primary btn-lg">VIEW OUR GALLERY</a>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="row mx-0 p-3 my-5 border border-4">
+
+<div class="container">
+    <div class="row mx-0 p-3 my-5">
 
         <!-- Expert Kitchen Remodels Section -->
         <section class="kitchen-remodels-section" id="home-repairs-section">
-            <div class="container">
+            <div class="container px-0">
                 <h2 class="section-title">Expert Kitchen Remodels & Cabinet Renovations</h2>
                 <p class="section-description">At Haggerty Construction, we specialize in transforming kitchens into
                     beautiful, functional spaces that suit your lifestyle. Our skilled team offers a wide range of
@@ -150,10 +153,6 @@ order: 100
         </section>
 
     </div>
-
-    <section class="cabinet-renovation-picture">
-
-    </section>
 
     <!-- About Us Section -->
     <section class="about-us-section" id="about-us-section">
@@ -214,7 +213,6 @@ order: 100
                         <option value="" selected disabled>Select a service</option>
                         <option value="Custom Cabinets">Custom Cabinets</option>
                         <option value="Kitchen Remodel">Kitchen Remodel</option>
-                        <option value="Bathroom Remodel">Bathroom Remodel</option>
                         <option value="General Contracting">General Contracting</option>
                         <option value="Handyman Services">Handyman Services</option>
                         <option value="Other">Other</option>
