@@ -47,10 +47,14 @@ body {
     */
 }
 
+h6 {
+    color: #e1dfee;
+}
+
 /* Hero Section */
 .hero-section {
     background-color: #f5f5f5; /* Change to your preferred background color */
-    background-image: url('/assets/images/wood-texture.jpg');
+    background-image: url('/assets/images/wood-texture.webp');
     background-size: cover;
     padding: 100px 0;
     text-align: center;
