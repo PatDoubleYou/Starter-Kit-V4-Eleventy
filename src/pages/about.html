@@ -1,17 +1,15 @@
 ---
 layout: 'base.html'
-description: "Meta description for the page"
-metaTitle: 'Title that shows up on google searches'
-tagTitle: 'About'
-preloadImg: '/images/cabinets2-1920w.webp'
+description: "Meet the family behind Haggerty Construction. Learn about our commitment to craftsmanship, our roots in the St. George community, and the skilled team dedicated to your project."
+metaTitle: 'About Haggerty Construction | St. George, UT'
+tagTitle: 'About Us'
+preloadImg: '/assets/images/shjon-with-a-level-on-a-shelf.webp'
 preloadCSS: '/css/about.css'
 permalink: 'about/'
 eleventyNavigation:
-    key: About Us
-    order: 200
+    key: About
+    order: 400
 ---
-
-<!-- Enter html code below -->
 
 <!-- ============================================ -->
 <!--                    LANDING                   -->
@@ -19,54 +17,81 @@ eleventyNavigation:
 
 <section id="int-hero">
   <h1 id="home-h">About Us</h1>
-  {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+  {% image "./src/assets/images/shjon-with-a-level-on-a-shelf.webp", "A Haggerty Construction team member ensuring a shelf is perfectly level.", "", "eager", "(max-width: 850px) 850px, 1920px" %}
 </section>
 
 <!-- ============================================ -->
 <!--                 Side By Side                 -->
 <!-- ============================================ -->
 
-<section id="sbs">
-  <div class="cs-container">
-    <!-- Left Image Section -->
-    <div class="cs-left">
-      {% image './src/images/cabinets2.jpg', 'cabinets', 'cs-picture cs-picture1', 'lazy'%}
-      {% image './src/images/construction.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
-    </div>
-    <!-- Right Content Section-->
-    <div class="cs-right">
-      <span class="cs-topper">About Us</span>
-      <h2 class="cs-title">About Company Title</h2>
-      <p class="cs-text">
-                In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-            </p>
-      <p class="cs-text">
-                In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-            </p>
-      <div class="cs-flex-group">
-        <p class="cs-flex-p">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                </p>
-        <span class="cs-name">Justin Time</span>
-        <span class="cs-job">CEO-Founder</span>
-        <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+<section id="sbs-about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Image Section - Replaced custom classes with Bootstrap grid -->
+      <div class="col-lg-6">
+          <!-- The custom "cs-left" container for stacked images is complex in Bootstrap. -->
+          <!-- For simplicity, we can feature one strong image here or create a more complex component later. -->
+          {% image "./src/images/construction.jpg", "The Haggerty Construction family team.", "img-fluid rounded shadow", "lazy", "(max-width: 600px) 400px, 850px" %}
       </div>
-      <a href="" class="button-solid">More About Us</a>
+      <!-- Right Content Section - Replaced custom classes with Bootstrap grid -->
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <span class="text-primary text-uppercase fw-bold">Haggerty Construction</span>
+        <h2 class="display-5 fw-bold">A Family Business Built on Trust & Craft</h2>
+        <p class="lead">
+          We believe that construction is more than just a job—it’s a craft. Founded by William Haggerty after decades in the industry, our company is built on a foundation of quality, integrity, and a relentless attention to detail. We’re not just building projects; we’re building a reputation with every nail, every cut, and every satisfied client.
+        </p>
+        <p>
+          As a family-owned and operated business in St. George, our name is on the line. That’s why we approach every project, big or small, with the same commitment: to deliver perdurable work that we’re proud to stand behind.
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ============================================ -->
-<!--             Final Call to Action             -->
+<!--            Meet The Team Section             -->
 <!-- ============================================ -->
 
-<section id="cta">
-  <div class="container">
-    <h2 class="title">Get It Done <br> With Us Today</h2>
-    <p>
-            Say something catchy, informative, and encouraging to click the button to go to the contact page.  I like to add these to the bottom of all pages.
-        </p>
-    <a href="/contact.html" class="button-solid">Free Estimate</a>
-  </div>
-  {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920'%}
+<section id="meet-the-team" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center display-4 fw-bold mb-5">Meet the Haggertys</h2>
+        <!-- Replaced custom cards with Bootstrap's card and grid system -->
+        <div class="row">
+
+            <!-- William Haggerty -->
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center shadow-sm">
+                    <!-- The image shortcode now uses Bootstrap's card-img-top and other utility classes -->
+                    {% image "./src/assets/images/logo white.png", "William Haggerty, Founder.", "card-img-top team-photo", "lazy", "200px" %}
+                    <div class="card-body">
+                        <h3 class="card-title h4">William Haggerty</h3>
+                        <p class="card-text">A military veteran with over 30 years of construction experience, William is the foundation of our company. His methodical approach and unwavering commitment to quality set the standard for everything we do. He believes in doing things the right way, no exceptions, ensuring every project is built to last.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- You -->
+            <div class="col-lg-4 mb-4">
+                 <div class="card h-100 text-center shadow-sm">
+                    {% image "./src/assets/images/logo white.png", "Your Name, Project & Client Relations.", "card-img-top team-photo", "lazy", "200px" %}
+                    <div class="card-body">
+                        <h3 class="card-title h4">Jayden Haggerty</h3>
+                        <p class="card-text">As a musician and an expecting father, I understand the importance of creativity and building for the future. I bring a focus on clear communication and innovative solutions to our projects, ensuring our clients’ vision is not only met, but exceeded. My goal is to make the construction process as smooth and transparent as possible.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blake Haggerty -->
+            <div class="col-lg-4 mb-4">
+                 <div class="card h-100 text-center shadow-sm">
+                    {% image "./src/assets/images/logo white.png", "Blake Haggerty, Lead Craftsman.", "card-img-top team-photo", "lazy", "200px" %}
+                    <div class="card-body">
+                        <h3 class="card-title h4">Blake Haggerty</h3>
+                        <p class="card-text">When he’s not on the ice playing hockey, Blake is our lead man on site, turning plans into reality. A father of two, he knows that a home needs to be as durable as it is beautiful. Blake’s hands-on expertise and leadership in the field ensure that the craftsmanship of every project lives up to the Haggerty name.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </section>
