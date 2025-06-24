@@ -14,14 +14,12 @@ order: 100
 ---
 
 <!-- Hero Section -->
-<section class="hero-section">
+<section id="hero-section">
     <div class="overlay"></div>
     <div class="container-fluid position-on-top">
         <div class="row">
             <div class="col-12" style="padding: 0px">
-                <!--{% image './src/assets/images/FullName500pxDarkBlue.png', 'The type logo for Haggerty Construction.',
-                'img-fluid', 'eager', '(max-width: 500px) 200px, 400px' %}-->
-                <img src="/assets/images/FullName500pxDarkBlue.png" class="img-fluid">
+                {% image './src/assets/images/FullName500pxDarkBlue.png', 'The type logo for Haggerty Construction.', 'img-fluid', 'eager', '(max-width: 600px) 400px, 500px' %}
             </div>
         </div>
         <div class="row align-items-center">
@@ -46,12 +44,9 @@ order: 100
 
         <div class="col-lg mt-3 mt-lg-0">
             <div class="card service h-100">
-                <div class="card-img-top img-fluid">
-                    <img class="card-img-top img-fluid" src="/assets/images/pro-range-kitchen.jpg" width="411"
-                        height="274" alt="A beautiful kitchen filled with gorgeous cabinets.">
-                </div>
+                {% image './src/assets/images/pro-range-kitchen.jpg', 'A beautiful kitchen filled with gorgeous cabinets.', 'card-img-top img-fluid', 'lazy', '(max-width: 600px) 400px, 850px' %}
                 <div class="card-body">
-                    <h4 class="card-title">Expert Kitchen Remodels</h4>
+                    <h4 class="card-title">Kitchen Remodels</h4>
                     <p class="card-text">
                         Ready to elevate your kitchen? Haggerty Construction specializes in professional
                         kitchen remodels, whether it's a small update or a complete transformation. Our
@@ -65,10 +60,9 @@ order: 100
 
         <div class="col-lg mt-3 mt-lg-0">
             <div class="card service h-100">
-                <img class="card-img-top img-fluid" src="/assets/images/conners-living-room.webp" width="411"
-                    height="274" alt="A beautiful kitchen filled with gorgeous cabinets.">
+                {% image './src/assets/images/conners-living-room.webp', 'A beautiful kitchen filled with gorgeous cabinets.', 'card-img-top img-fluid', 'lazy', '(max-width: 600px) 400px, 850px' %}
                 <div class="card-body">
-                    <h4 class="card-title">Custom Cabinets & Storage Solutions</h4>
+                    <h4 class="card-title">Custom Cabinets</h4>
                     <p class="card-text">Enhance your home with our expertly designed and crafted custom cabinets.
                         From kitchens to laundry rooms, and stylish floating shelves in between, Haggerty
                         Construction has you covered. We'll work with you to create personalized storage solutions
@@ -79,10 +73,9 @@ order: 100
 
         <div class="col-lg mt-3 mt-lg-0">
             <div class="card service h-100">
-                <img class="card-img-top img-fluid" src="/assets/images/shjon-with-a-level-on-a-shelf.webp" width="411"
-                    height="274" alt="An open stainless steel dishwasher.">
+                {% image './src/assets/images/shjon-with-a-level-on-a-shelf.webp', 'An open stainless steel dishwasher.', 'card-img-top img-fluid', 'lazy', '(max-width: 600px) 400px, 850px' %}
                 <div class="card-body">
-                    <h4 class="card-title">Comprehensive General Contracting Services</h4>
+                    <h4 class="card-title">General Contracting Services</h4>
                     <p class="card-text">Haggerty Construction delivers top-notch general contracting services for
                         all your construction and renovation needs. Our skilled team manages projects of any size,
                         ensuring timely completion and exceptional quality. From residential to commercial, we
@@ -97,7 +90,7 @@ order: 100
 <div class="container my-5">
     <div class="row gallery-row text-center">
         <div class="col-12 col-sm col-lg-6">
-            <img src="/assets/images/gallery/latest-remodel/after.jpg" class="img-fluid">
+            {% image './src/assets/images/gallery/latest-remodel/after.jpg', 'Completed kitchen remodel with professional appliances and custom panels.', 'img-fluid', 'lazy', '(max-width: 600px) 500px, 850px' %}
         </div>
         <div class="col-12 col-sm col-lg-6 pt-5 pb-4">
             <h2>Want to see our most recent project?</h2>
@@ -141,12 +134,10 @@ order: 100
                 </div>
                 <div class="row pt-2">
                     <div class="col-md-6">
-                        <img class="card-img-top img-fluid" src="/assets/images/trash can pullout.jpg" width="2048"
-                            height="1152" alt="An open stainless steel dishwasher.">
+                        {% image './src/assets/images/trash can pullout.jpg', 'A custom pull-out trash can cabinet in a new kitchen.', 'card-img-top img-fluid', 'lazy', '(max-width: 600px) 500px, 850px' %}
                     </div>
                     <div class="col-md-6">
-                        <img class="card-img-top img-fluid" src="/assets/images/custom-drawer-front.jpg" width="2048"
-                            height="1152" alt="An open stainless steel dishwasher.">
+                        {% image './src/assets/images/custom-drawer-front.jpg', 'A close-up of a custom drawer front with detailed craftsmanship.', 'card-img-top img-fluid', 'lazy', '(max-width: 600px) 500px, 850px' %}
                     </div>
                 </div>
             </div>

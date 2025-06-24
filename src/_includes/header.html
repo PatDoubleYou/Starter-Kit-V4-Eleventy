@@ -13,12 +13,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link {{ 'active' if '' == page.url }}" aria-current="page" href="/">HOME</a>
-                <a class="nav-link" href="#services">SERVICES</a>
-                <a class="nav-link" href="#about-us-section">ABOUT US</a>
-                <a class="nav-link {{ 'active' if 'gallery' == page.url }}" href="/gallery">GALLERY</a>
-                <a class="nav-link {{ 'active' if 'blog' == page.url }}" href="/blog">BLOG</a>
-                <a class="nav-link" href="tel:+14354141974"><i class="bi bi-telephone-fill"></i> (435) 414-1974</a>
+                <a class="nav-link {{ 'active' if '/' == page.url }}" aria-current="page" href="/">HOME</a>
+                {# You should create a services.html page #}
+                <a class="nav-link {{ 'active' if '/services/' == page.url }}" href="/services/">SERVICES</a>
+                <a class="nav-link {{ 'active' if '/about/' == page.url }}" href="/about/">ABOUT</a>
+                <a class="nav-link {{ 'active' if '/gallery/' == page.url }}" href="/gallery/">GALLERY</a>
+                <a class="nav-link {{ 'active' if '/blog/' == page.url }}" href="/blog/">BLOG</a>
+                <a class="nav-link {{ 'active' if '/contact/' == page.url }}" href="/contact/">CONTACT</a>
+                <a class="nav-link" href="tel:{{ client.phone }}"><i class="bi bi-telephone-fill"></i> {{ client.phoneFormatted }}</a>
             </div>
         </div>
     </div>
