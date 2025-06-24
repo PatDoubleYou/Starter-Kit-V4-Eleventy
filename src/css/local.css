@@ -737,3 +737,42 @@
     display: none;
   }
 }
+
+
+.testimonial-card {
+    background-color: #17313D;
+    padding: 2rem 1.5rem 1.25rem 1.5rem;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-card p {
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    color: #ddd;
+}
+
+.testimonial-card .star-group {
+    border-top: 1px solid #346F8A;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial-card .star-group .name {
+    color: #fff;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.testimonial-card .star-group .desc {
+    font-weight: 400;
+    font-size: 0.9rem;
+    opacity: .8;
+}

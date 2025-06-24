@@ -81,20 +81,67 @@ order: 100
     </div>
 </div>
 
-<div class="container my-5">
-    <div class="row gallery-row text-center">
-        <div class="col-12 col-sm col-lg-6">
-            {% image './src/assets/images/gallery/latest-remodel/after.jpg', 'Completed kitchen remodel with professional appliances and custom panels.', 'img-fluid', 'lazy', '(max-width: 600px) 500px, 850px' %}
+<section id="project-spotlight" class="container my-5">
+    <div class="row text-center">
+        <div class="col">
+            <h2 class="pt-5">Project Spotlight</h2>
+            <p class="lead" style="color: #ddd;">A Glimpse Into Our Craftsmanship</p>
         </div>
-        <div class="col-12 col-sm col-lg-6 pt-5 pb-4">
-            <h2>Want to see our most recent project?</h2>
-            <div class="d-flex align-items-center justify-content-center">
-                <a href="/gallery" class="btn btn-primary btn-lg">VIEW OUR GALLERY</a>
+    </div>
+    <div class="row align-items-center" style="background-color: #17313D; border-radius: 5px; padding: 2rem;">
+         <div class="col-lg-7 mb-4 mb-lg-0">
+            {% image './src/assets/images/gallery/latest-remodel/after.jpg', 'A completed kitchen remodel with custom panels and professional appliances.', 'img-fluid rounded shadow', 'lazy' %}
+         </div>
+         <div class="col-lg-5">
+            <h3 class="mt-3 mt-lg-0">Full Kitchen Transformation</h3>
+            <h6 class="card-subtitle mb-2" style="color: #e1dfee;">Custom Panels & Appliance Garage</h6>
+            <p>We transformed this space by modifying cabinets for a Pro Range and Vent Hood, removing wall ovens to create a custom appliance garage with retractable doors, and retrofitting cabinetry to seamlessly integrate a new built-in fridge with a custom, color-matched panel.</p>
+            <a href="/gallery/" class="btn btn-primary mt-3">See The Full Project</a>
+         </div>
+    </div>
+</section>
+
+<section id="testimonials" class="container my-5">
+    <div class="row text-center">
+        <div class="col">
+            <h2 class="pt-5">What Our Clients Say</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="testimonial-card">
+                <p>"The team's attention to detail was incredible. They listened to our vision for the kitchen and delivered beyond our expectations. The custom cabinetry is not only beautiful but also incredibly functional. Truly top-notch craftsmanship."</p>
+                <div class="star-group">
+                    <span class="name">Maria S. <br><span class="desc">St. George, UT</span></span>
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="91" height="15">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-stretch">
+             <div class="testimonial-card">
+                <p>"Haggerty Construction handled our remodel with complete professionalism. They were communicative, stayed on schedule, and the quality of their work is perdurable. We finally have the kitchen we've always dreamed of. Highly recommend."</p>
+                <div class="star-group">
+                    <span class="name">David L. <br><span class="desc">Washington, UT</span></span>
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="91" height="15">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="testimonial-card">
+                <p>"From the initial quote to the final walkthrough, the process was seamless. They turned our outdated space into a modern, beautiful kitchen. We were so impressed with the craftsmanship and the respect they showed for our home."</p>
+                <div class="star-group">
+                    <span class="name">Jennifer P. <br><span class="desc">Ivins, UT</span></span>
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="91" height="15">
+                </div>
             </div>
         </div>
     </div>
-</div>
-
+    <div class="row text-center mt-4">
+        <div class="col">
+            <a href="/reviews/" class="btn btn-secondary">Read More Reviews</a>
+        </div>
+    </div>
+</section>
 
 <div class="container">
     <div class="row mx-0 p-3 my-5">
