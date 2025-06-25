@@ -1,0 +1,112 @@
+---
+layout: 'base.html'
+description: 'From complete kitchen remodels and custom cabinetry to general contracting and home repairs, Haggerty Construction offers a full range of services in St. George, UT.'
+metaTitle: 'Our Services | Haggerty Construction'
+tagTitle: 'Services'
+preloadImg: '/assets/images/pro-range-kitchen.jpg'
+preloadCSS: '/css/local.css'
+permalink: 'services/'
+eleventyNavigation:
+    key: Services
+    order: 200
+---
+
+<section style="padding-top: 6rem; padding-bottom: 3rem; background-color: var(--background-primary);">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="display-4 fw-bold">Our Services</h1>
+                <p class="lead" style="color: #ddd;">From custom cabinetry to full-scale remodels, we provide durable, high-quality craftsmanship for every corner of your home.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                {% image './src/assets/images/pro-range-kitchen.jpg', 'A professional range in a newly remodeled kitchen.', 'img-fluid rounded shadow-lg', 'lazy', '(max-width: 600px) 500px, 1200px' %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container my-5 py-5">
+    <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+            <h2 class="display-5 fw-bold">Built to Last, Designed for Life</h2>
+            <p class="lead" style="color: #ddd;">
+                At Haggerty Construction, we approach every project with a commitment to quality, durability, and meticulous craftsmanship. Whether you're looking to transform a single room or require comprehensive contracting services, our family is dedicated to bringing your vision to life with results you'll be proud of for years to come.
+            </p>
+            <hr class="my-5">
+        </div>
+    </div>
+
+    <div class="row align-items-center mb-5 pb-5">
+        <div class="col-md-6 mb-4 mb-md-0">
+            {% image './src/assets/images/gallery/latest-remodel/after.jpg', 'A beautiful kitchen remodel with custom cabinets.', 'img-fluid rounded shadow', 'lazy'%}
+        </div>
+        <div class="col-md-6">
+            <span class="text-primary text-uppercase fw-bold">Our Specialty</span>
+            <h2>Expert Kitchen Remodels</h2>
+            <p>
+                The kitchen is the heart of your home, and it deserves to be both beautiful and highly functional. We manage every detail of the remodeling process, from thoughtful design and layout to the final installation. Whether it's a simple cabinet refresh or a complete down-to-the-studs transformation, we ensure the final space is one your family will love for years to come.
+            </p>
+            <ul>
+                <li>Full-scale kitchen design and renovation</li>
+                <li>Appliance integration and custom paneling</li>
+                <li>Countertop and backsplash installation</li>
+                <li>Lighting and plumbing fixture updates</li>
+            </ul>
+            <a href="/contact" class="btn btn-primary mt-3">Plan Your New Kitchen</a>
+        </div>
+    </div>
+
+    <div class="row align-items-center mb-5 pb-5">
+        <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+            {% image './src/assets/images/gallery/Martys bookcase final.webp', 'A custom wall-to-wall bookcase.', 'img-fluid rounded shadow', 'lazy'%}
+        </div>
+        <div class="col-md-6 order-md-1">
+            <span class="text-primary text-uppercase fw-bold">Crafted For You</span>
+            <h2>Custom Cabinets & Built-ins</h2>
+            <p>
+                Good storage is about smart, perdurable design. We specialize in creating custom-built cabinets and storage solutions that are tailored to your life. From stunning kitchen cabinetry and functional mudroom built-ins to elegant floating shelves and custom furniture, we build pieces that add permanent value and character to your home.
+            </p>
+            <ul>
+                <li>Kitchen and bathroom cabinetry</li>
+                <li>Custom bookcases and entertainment centers</li>
+                <li>Mudroom cubbies and storage benches</li>
+                <li>Floating shelves and mantles</li>
+            </ul>
+            <a href="/contact" class="btn btn-primary mt-3">Get A Cabinet Quote</a>
+        </div>
+    </div>
+
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6 mb-4 mb-md-0">
+            {% image './src/assets/images/shjon-with-a-level-on-a-shelf.webp', 'A Haggerty Construction team member works on a project.', 'img-fluid rounded shadow', 'lazy'%}
+        </div>
+        <div class="col-md-6">
+            <span class="text-primary text-uppercase fw-bold">Reliable & Professional</span>
+            <h2>General Contracting & Home Repair</h2>
+            <p>
+                When you hire us, you’re hiring a partner dedicated to getting the job done right. We handle all aspects of general contracting with a focus on clear communication and transparency. For smaller jobs, our handyman services provide the same high standard of quality for all your home repair and improvement needs.
+            </p>
+            <ul>
+                <li>Project management for small to medium remodels</li>
+                <li>Drywall repair and installation</li>
+                <li>Weather-stripping and energy efficiency upgrades</li>
+                <li>General home maintenance and repairs</li>
+            </ul>
+            <a href="/contact" class="btn btn-primary mt-3">Tell Us About Your Project</a>
+        </div>
+    </div>
+
+</div>
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">Get It Done <br> With Us Today</h2>
+    <p>
+        Ready to start your next project? Reach out to us for a transparent, no-obligation estimate.
+    </p>
+    <a href="/contact" class="button-solid">Free Estimate</a>
+  </div>
+  {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>
