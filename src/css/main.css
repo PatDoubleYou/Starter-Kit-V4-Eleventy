@@ -7,6 +7,14 @@
     overflow: auto;
 }*/
 
+:root {
+    --primary: #346F8A;
+    --secondary: ;
+    --background-light: #fff9f3;
+    --background-dark: #222;
+
+}
+
 body {
     
     background-image: url("/assets/images/concrete.webp");
@@ -16,8 +24,7 @@ body {
     background-blend-mode: normal;
     
     background-color: #555;
-    --background-primary: #222;
-    color: #EEEEEE;
+    color: var(--background-light);
 
     /*
     font-family: sans-serif;
@@ -47,14 +54,17 @@ body {
     */
 }
 
+.background-dark {
+    background-color: var(--background-dark);
+}
+
 h6 {
     color: #e1dfee;
 }
 
 /* Hero Section */
 .hero-section {
-    background-color: #f5f5f5; /* Change to your preferred background color */
-    background-image: url('/assets/images/wood-texture.webp');
+    background-color: var(--background-light); /* Change to your preferred background color */
     background-size: cover;
     padding: 100px 0;
     text-align: center;
@@ -125,7 +135,6 @@ a {
     font-weight: 700;
     font-style: normal;
 
-    box-shadow: 0px 5px 10px 0px #111111e3;
 }
 
 .btn-primary {
@@ -135,6 +144,17 @@ a {
 .btn-primary:hover {
     background-color: #3B4E57; /* Change to your preferred primary button hover color */
 }
+
+.btn-outline-secondary {
+    color: #346F8A;
+    border: 2px solid #346F8A;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #3B4E57; /* Change to your preferred primary button hover color */
+
+}
+
 
 h1, h2, h3, h4, h5 {
     font-family: apotek-extrawide, sans-serif;
@@ -200,7 +220,7 @@ h1, h2, h3, h4, h5 {
     font-weight: 700;
     font-style: normal;
     text-align: center;
-    color: white;
+    color: var(--background-light);
     line-height: 3em;
     margin: 0;
 
@@ -223,6 +243,11 @@ h1, h2, h3, h4, h5 {
 
 .gallery-section .card {
     margin-bottom: 1.5rem;
+}
+
+.card {
+    background-color: #333;
+    color: var(--background-light);
 }
 
 .gallery-section .img-fluid {
@@ -252,7 +277,7 @@ h1, h2, h3, h4, h5 {
 
 footer {
     text-align: center;
-    background-color: var(--background-primary);
+    background-color: var(--background-dark);
 }
 
 @keyframes fade {

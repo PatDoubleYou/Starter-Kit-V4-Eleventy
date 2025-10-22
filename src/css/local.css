@@ -737,3 +737,73 @@
     display: none;
   }
 }
+
+
+
+
+
+/* ============================================ */
+/* New Service Cards               */
+/* ============================================ */
+
+.service-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  background-color: var(--dark);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.service-card .card-icon {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.service-card .card-title {
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.service-card .card-text {
+  font-size: 0.95rem;
+  color: var(--body);
+  margin-bottom: 1.5rem;
+}
+
+/* Make dropdowns work on hover */
+@media (min-width: 992px) {
+  .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+  }
+}
+
+/* Style nav dropdowns for dark navbar */
+.navbar-dark .dropdown-menu {
+  background-color: var(--dark);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.navbar-dark .dropdown-item {
+  color: rgba(255,255,255,0.7);
+}
+
+.navbar-dark .dropdown-item:hover,
+.navbar-dark .dropdown-item:focus {
+  color: #fff;
+  background-color: var(--primary);
+}
+
+.navbar-dark .dropdown-divider {
+  border-color: rgba(255,255,255,0.15);
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
